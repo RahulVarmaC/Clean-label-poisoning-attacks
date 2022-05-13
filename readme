@@ -1,0 +1,2 @@
+This jupyter noteboks generates clean label poisons that is described in the Poison Frags paper. The code is modified and used from the poison frogs paper. 
+The poison instances are generated via bi-level optimization using feature collisions.
