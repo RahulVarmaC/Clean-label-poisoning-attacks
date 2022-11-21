@@ -1,2 +1,8 @@
-This jupyter noteboks generates clean label poisons that is described in the Poison Frags paper. The code is modified and used from the poison frogs paper. 
-The poison instances are generated via bi-level optimization using feature collisions.
+This project generates clean label poisons using the concept of feature collisions from the paper : Poison Frogs! Targeted Clean-Label Poisoning
+Attacks on Neural Networks paper by Shafahi et.al. We then evaluate the potency of these generated poisons during the test phase and conclude that it has 
+no significant effect on the performance of the models. Then we include these poison images in the training set and train the penultimate layer of the VGG-16 
+architecture. All the target instances were misclassified during this experiment. Then we performed an end to end training for the VGG 16 and multi resolution 
+CNN architectures. 2 of the 5 target instances were misclassified for the VGG- 16 architecture and no instances were misclassified for the multiresolution CNN 
+architecture thereby leading us to conclude that multiresolution CNN's are more robust to targeted clean label poisoning attacks.
+
+
